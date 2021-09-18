@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+:root {
+    --blue: "blue";
+    --red: 'red';
+
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Neoneon-3zaD6.otf);
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+    display: inline-block;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+button {
+    padding: 8px 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.flex-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-container {
+    background-image: linear-gradient(to left top, #1f2021, #242628, #2a2c2f, #303137, #37373e);
+    width: 100%;
+    height: 100%;
+    align-items: unset;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-bottom: 10px;
+    /* border: 2px rgb(0, 255, 106) solid; */
+
+}
+.Hero_img1 {
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(100);
+    -webkit-filter: grayscale(100);
+}
+
+/* * left menu  */
+.left-menu {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+
+    height: 100%;
+    overflow: hidden;
+    border-right: #404447 1px solid;
+}
+
+.left-menu>a {
+    width: 100%;
+    height: 70px;
+    padding: 20px 20px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    background: #404447;
+    backdrop-filter: blur(2.0px);
+    -webkit-backdrop-filter: blur(2.0px);
+
+
+}
+
+.social-cargo {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.social-cargo  >a {
+    width: 100%;
+    height: 90px;
+    /*border: 1px solid yellow;
+    */padding: 35px;
+    overflow: hidden;
+    transform: rotate(-90deg);
+    transition: 1s linear transform;
+    -webkit-transition: .2s linear transform;
+    -moz-transition: 1s linear transform;
+    -ms-transition: 1s linear transform;
+    -o-transition: 1s linear transform;
+}
+
+.social-cargo  > a:hover {
+    background-color: rgb(71, 71, 71);
+    transform:rotate(0deg) !important;
+    -webkit-transform:rotate(0deg) !important;
+    -moz-transform:rotate(0deg) !important;
+    -ms-transform:rotate(0deg) !important;
+    -o-transform:rotate(0deg) !important;
+}
+
+.social-cargo  >a > img {
+
+    opacity: .8;
+}
+
+/* ! left menu end  */
+
+.main-menu {
+    flex-basis: 100%;
+    overflow: hidden;
+
+
+}
+
+.menu_nav {
+    width: 100%;
+    padding: 8px 20px;
+    height: 70px;
+    justify-content: space-between;
+
+}
+
+.logo {
+    height: 100%;
+    padding: 0px 10px;
+    /* border: 1px solid yellow; */
+    font-size: 28px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+.menu_op {
+    /* border: 2px white solid; */
+    width: fit-content;
+    height: 100%;
+}
+
+.op_li {
+    list-style: none;
+}
+.op_li  >a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.op_links {
+    padding: 8px 10px;
+    font-weight: 700;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: 0px 8px;
+
+
+}
+
+
+
+
+
+
+/* main cargo  */
+
+.main-cargo {
+    width: 100%;
+    height: calc(100% - 70px);
+    /* max-height: %; */
+    overflow: hidden;
+    /* border: 1px solid red; */
+
+}
+
+.first-cargo {
+    width: 100%;
+    /* border: 2px solid green; */
+    height: 75%;
+
+}
+
+.float-div {
+    flex: 1;
+    margin: 0px 10%;
+    margin-top: 5%;
+    margin-bottom: auto;
+}
+.float-div.fd-2 > h1 {
+    color: white;
+    line-height: 1;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: capitalize;
+    /* border: 1px saddlebrown solid; */
+ 
+} 
+.float-div.fd-2 > h1 > span{
+    margin: 0px 1px;
+    font-family: myFirstFont;
+    transition: all 1s 1s linear;
+    -webkit-transition: all 1s 1s linear;
+    -moz-transition: all 1s 1s linear;
+    -ms-transition: all 1s 1s linear;
+    -o-transition: all 1s 1s linear;
+    pointer-events: none;
+}
+
+.span_flip {
+    color: red;
+    animation: flip1 1s liner 1 alternate ;
+    -webkit-animation: flip1 1s liner 1 alternate ;
+}
+@keyframes flip1 {
+    from {
+        position: absolute;
+        transform: translateX(-100px);
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+}
+to {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+    
+}
+
+.float-div.fd-2 >p{
+    margin: 10px 0px;
+    color: rgba(255, 255, 255, 0.342);
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 13px;
+    word-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.float-div.fd-1 > * {
+    color: rgb(173, 159, 159);
+    margin: 5px 0px;
+
+
+
+}
+.float-div.fd-1 > h3 {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
+
+
+}
+
+
+.float-div.fd-1 > .span_bar {
+    display: block;
+    width: 50%;
+    height: 3px;
+
+    border-radius: 10px;
+    background-color: rgba(82, 71, 71, 0.5);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.float-div.fd-1 > .span_bar > span {
+    display: block;
+    width: 50%;
+
+    height: 100%;
+    background-color: rgb(122, 112, 112);
+
+}
+.float-div.fd-1 > p {
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+}
+.float-div.fd-1 >  a {
+    display: flex;
+
+    color: rgb(110, 110, 110);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    font-family: 'Work Sans', sans-serif;
+}
+.float-div.fd-1 > a:hover {
+    color: lightgray;
+
+}
+
+
+/* *second cargo */
+
+.second-cargo{
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid blue;   */
+    overflow: hidden;
+    
+    background-image: linear-gradient(to left top, #1f2021, #242628, #2a2c2f, #303137, #37373e);
+    backdrop-filter: blur( 3.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+
+}
+
+.second-cargo > div{
+    flex: 1;
+    padding: 20px 20px;
+    height: 100%;
+    /* border: 1px solid rgb(255, 166, 0); */
+
+
+
+}
+.second-cargo>.col_1 {
+    flex: 1.4;
+    padding: 25px 60px;
+
+}
+.second-cargo>.col_1 > p {
+    width: 100%;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+    text-transform: uppercase;
+}
+.col-time{
+    /* border: 1px solid rgb(255, 166, 0); */
+
+    flex: 1;
+    padding: 0px 0px;
+    margin: 20px 0px;
+    
+}
+.col-time > p:first-of-type {
+
+    color: grey;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 2.5;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.col-time> p:last-of-type {
+
+    font-size: 14px;
+
+    color: rgb(218, 218, 218);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+
+.second-cargo>.col_2{
+    padding: 0px;
+}
+.second-cargo>.col_2>div:first-of-type {
+    flex: .5;
+    height: 100%;
+
+}
+.news-cargo > *{
+}
+
+.news-cargo {
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.news-cargo > p {
+    letter-spacing: 2px;
+    color: white;
+    max-width: 400px;
+    font-weight: 600;
+
+    
+}
+.news-dis {
+    color: grey !important;
+    letter-spacing: 0px !important;
+
+}
+
+.read-more-btn {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: gold;
+    font-weight: 600;
+
+}
+
